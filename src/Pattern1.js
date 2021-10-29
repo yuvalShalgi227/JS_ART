@@ -1,5 +1,5 @@
 const canvasSketch = require('canvas-sketch');
-
+import {LINE_WIDTH, BACKGROUND_COLOR} from './consts/drawConsts'
 const utils = require('./draw-components/drawUtils');
 
 const settings = {
@@ -12,7 +12,7 @@ const sketch = ({ width, height }) => {
   utils.initAgents(Agents, width, height);
   
   return ({ context, width, height }) => {
-    context.lineWidth = 2;
+    context.lineWidth = LINE_WIDTH;
     context.fillStyle = 'white';
     context.fillRect(0, 0, width, height);
     utils.drawLines(Agents, context);

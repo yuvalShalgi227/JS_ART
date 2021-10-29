@@ -1,6 +1,6 @@
 import Agent from './Agent';
+import { NUMBER_OF_AGENTS } from '../consts/drawConsts';
 const random = require('canvas-sketch-util/random');
-import { NUMBER_OF_AGENTS } from '../../consts/drawConsts';
 
 export function initAgents(Agents, width, height) {
   for (let i = 0; i < NUMBER_OF_AGENTS; i++) {
