@@ -1,5 +1,5 @@
 import Agent from './Agent';
-import { NUMBER_OF_AGENTS } from '../consts/drawConsts';
+import { NUMBER_OF_AGENTS, MAX_LINE_SIZE } from '../consts/drawConsts';
 import {getDistance} from '../calulation-utils/distanceUtil'
 const random = require('canvas-sketch-util/random');
 
@@ -16,7 +16,8 @@ export  const drawLines = (Agents, context) => {
       let agentA = Agents[i];
       for (let j = i + 1; j < Agents.length; j++) {
         let agentB = Agents[j];
-        if (getDistance(agentA,agentB)> 400) continue;
+        
+        if (getDistance(agentA,agentB)> MAX_LINE_SIZE) continue;
         context.beginPath();
         context.moveTo(agentA.pos.x, agentA.pos.y);
         context.lineTo(agentB.pos.x, agentB.pos.y);
