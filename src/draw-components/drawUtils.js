@@ -1,4 +1,5 @@
 import Agent from './Agent';
+import {getDistance} from '../calulation-utils/distanceUtil'
 import { NUMBER_OF_AGENTS } from '../consts/drawConsts';
 const random = require('canvas-sketch-util/random');
 
@@ -15,9 +16,13 @@ export  const drawLines = (Agents, context) => {
       let agentA = Agents[i];
       for (let j = i + 1; j < Agents.length; j++) {
         let agentB = Agents[j];
+        // if (getDistance(agentA,agentB) > 200 ){
+        //   continue;
+        // }
         context.beginPath();
         context.moveTo(agentA.pos.x, agentA.pos.y);
         context.lineTo(agentB.pos.x, agentB.pos.y);
+        //context.quadraticCurveTo(agentB.pos.x, Math.min(agentA.pos.x, agentB.pos.y)  , Math.max(agentA.pos.x, agentB.pos.y) *2 ,agentB.pos.y);
         context.stroke();
 
       }

@@ -8,6 +8,7 @@ class Agent {
         this.pos = new Point(x,y);
         this.vector = new Point(agentSpeed(),agentSpeed());
         this.rad = random.range(MIN_POINT_SIZE,MAX_POINT_SIZE);
+        this.cruve1 = random.range(100,300)
     }
     update() {
         this.pos.x += this.vector.x;
