@@ -9,3 +9,9 @@ export const isOutOfRange = (num, limit) => {
 export const agentSpeed = () => {
     return random.range(-1*SPEED,SPEED)
 };
+
+export const getDistance = (agentA, agentB) => {
+    let dx = agentA.pos.x - agentB.pos.x;
+    let dy = agentA.pos.y - agentB.pos.y;
+    return Math.sqrt(dx*dx + dy*dy);
+};
