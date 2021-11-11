@@ -1,6 +1,6 @@
 # JS_ART
 First project "canvas_sketch_1" awating dana review :)
-
+![Alt text](canvas_sketch_1/pattern1.PNG?raw=true "Title")
 1. npm i
 2. run one of the pattens using canvas-sketch
 open gitBash and run the command
