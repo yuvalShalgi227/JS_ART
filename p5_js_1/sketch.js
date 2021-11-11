@@ -52,7 +52,7 @@ class Walker {
     //set limit on vel
     let s = this.vel.mag;
     this.vel.add(this.acc);
-    if (this.vel.mag()>5) {
+    if (this.vel.mag()>10) {
       this.vel.setMag(1);
     }
     
