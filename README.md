@@ -1,6 +1,6 @@
 # JS_ART
 First project "canvas_sketch_1" awating dana review :)
-![Alt text](canvas_sketch_1/pattern1.PNG?raw=true "Title" width="200" height="100")
+<img src="canvas_sketch_1/pattern1.PNG" "Title" width="200" height="100">
 1. npm i
 2. run one of the pattens using canvas-sketch
 open gitBash and run the command
