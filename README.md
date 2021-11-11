@@ -1,6 +1,6 @@
 # JS_ART
 First project "canvas_sketch_1" awating dana review :)
-<img src="canvas_sketch_1/pattern1.PNG" width="200" height="100"/>
+<img src="canvas_sketch_1/pattern1.PNG" width="300" height="300"/>
 1. npm i
 2. run one of the pattens using canvas-sketch
 open gitBash and run the command
