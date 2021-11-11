@@ -1,5 +1,6 @@
 # JS_ART
-
+project 1
+---------
 <img src="canvas_sketch_1/pattern1.PNG" width="300" height="300"/>
 
 First project "canvas_sketch_1" awating dana review :)
@@ -13,4 +14,6 @@ based on
 https://github.com/mattdesl/canvas-sketch
 
 project 2
+---------
+<img src="p5_js_1/Screenshot_1.png" width="300" height="300"/>
 p5.js based project need to run with a server.
