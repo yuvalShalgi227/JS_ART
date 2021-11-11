@@ -1,5 +1,5 @@
 # JS_ART
-project 1
+Project 1
 ---------
 
 <span>
@@ -14,10 +14,12 @@ open gitBash and run the command
 command1: canvas-sketch pattarn1.js
 command2: canvas-sketch pattarn1.js
 
-based on
+Based on
 https://github.com/mattdesl/canvas-sketch
 
-project 2
+Project 2
 ---------
 <img src="p5_js_1/Screenshot_1.png" width="300" height="300"/>
 p5.js based project need to run with a server.
+Based on
+https://github.com/processing/p5.js/
