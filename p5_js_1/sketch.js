@@ -1,17 +1,14 @@
 const NUMBER_OF_AGENTS = 200;
 const BALL_SIZE = 48;
-
 let balls= [];
-const randomRange = (min,max) => (
-  Math.floor(Math.random() * (max - min + 1)) + min
-);
+
 
 
 //todo why is using a callback fucntion not working ?
 function setup() {
   createCanvas(2080, 800);
   for (let i =1; i <= NUMBER_OF_AGENTS; i++) {
-    balls.push(new Walker(randomRange(0,1080),randomRange(0,800)));
+    balls.push(new Walker(random(1080),random(800)));
   }
 }
 
@@ -55,9 +52,17 @@ class Walker {
     if (this.vel.mag()>10) {
       this.vel.setMag(1);
     }
-    
 
+    //rotate from size
+    if (this.vel.mag()>10) {
+      this.acc.rotate(-0.3);
+      this.vel.setMag(1);
+    }else {
+      this.acc.rotate(0.3);
+    }
     this.pos.add(this.vel);
+
+    //implement groth chaange
     if (!this.grow){
       offset = offset * -1;
     }
@@ -70,8 +75,8 @@ class Walker {
         this.vel = createVector(0, 0);
         this.display = this.display.bind(this);
         this.walk = this.walk.bind(this);
-        this.w = randomRange(BALL_SIZE/10,BALL_SIZE);
-        this.h = randomRange(BALL_SIZE/10,BALL_SIZE);
+        this.w = random(BALL_SIZE/10,BALL_SIZE);
+        this.h = random(BALL_SIZE/10,BALL_SIZE);
         this.grow = true;
         this.col= [255, 204, 100]
 
