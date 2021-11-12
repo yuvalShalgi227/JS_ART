@@ -1,6 +1,7 @@
 const NUMBER_OF_AGENTS = 200;
 const BALL_SIZE = 48;
 let balls= [];
+let offX = 0 ;
 
 
 
@@ -14,6 +15,7 @@ function setup() {
 
 function draw() {
   background(51);
+  offX += 1;
   let offset =1 ;
   for (let i =1; i <= NUMBER_OF_AGENTS; i++) {
     if (balls[i -1].w > 100) {
@@ -32,9 +34,9 @@ class Walker {
     this.col[0] += this.grow && this.col[0] <255 ? offset: offset*-1;
     this.col[1] += !this.grow && this.col[1] <150 ? offset: offset*-1;
     this.col[2] += !this.grow && this.col[2] <150 ? offset: offset*-1;
-    let r= this.col;
-    let g= this.col*1.5;
-    let b= this.col*0.5;
+    let r= this.col[0];
+    let g= this.col[1]*(1 + noise(offX));
+    let b= this.col[2]*noise(offX);
     colorMode(HSB);
     fill(this.col[0],this.col[1], this.col[2]);
     ellipse(this.pos.x, this.pos.y,this.w  ,this.h );
