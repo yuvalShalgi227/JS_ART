@@ -4,8 +4,8 @@ class Walker {
       this.col[1] += !this.grow && this.col[1] <150 ? offset: offset*-1;
       this.col[2] += !this.grow && this.col[2] <150 ? offset: offset*-1;
       let r= this.col[0];
-      let g= this.col[1]*(1 + noise(offX));
-      let b= this.col[2]*noise(offX);
+      let g= this.col[1]*(1 + noise(frame));
+      let b= this.col[2]*noise(frame);
       colorMode(HSB);
       fill(this.col[0],this.col[1], this.col[2]);
       ellipse(this.pos.x, this.pos.y,this.w  ,this.h );

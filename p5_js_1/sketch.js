@@ -8,7 +8,7 @@ function setup() {
 
 function draw() {
   background(51);
-  offX += 1;
+  frame += 1;
   let offset =1 ;
   for (let i =0; i <= NUMBER_OF_AGENTS; i++) {
     if (balls[i].w > 100) {
