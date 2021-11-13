@@ -22,7 +22,9 @@ https://github.com/mattdesl/canvas-sketch
 
 #### Project 2
 
-<img src="p5_js_1/Screenshot_1.png" width="300" height="300"/>
+<img src="p5_js_1/Screenshot_1.png" width="600" height="300"/>
+<img src="p5_js_1/Screenshot_2.png" width="600" height="300"/>
+<img src="p5_js_1/Screenshot_3.png" width="600" height="300"/>
 p5.js based project need to run with a server.
 Based on
 https://github.com/processing/p5.js/
