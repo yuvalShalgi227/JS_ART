@@ -13,7 +13,7 @@ class Particle {
     }
     display() {
         fill(255);
-        ellipse(this.pos.x,this.pos.y,48,48);
+        ellipse(this.pos.x,this.pos.y,this.mas*10,this.mas*10);
     }
     applayForce(force) {
         // don't chaneg the force, use it's value (can be better if this copy is not created each time)
