@@ -1,6 +1,6 @@
 
 function setup() {
-  createCanvas(2080, 800);
+  createCanvas(window.innerWidth, window.innerHeight);
   for (let i =1; i <= NUMBER_OF_AGENTS; i++) {
     balls.push(new Walker(random(1080),random(800)));
   }
