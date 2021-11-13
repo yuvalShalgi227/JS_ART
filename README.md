@@ -8,7 +8,7 @@
   <img src="canvas_sketch_1/pattern2.PNG" width="300" height="300"/>
 </span>
 
-First project "canvas_sketch_1" awating dana review :)
+First project "canvas_sketch_1" awating review :)
 1. ```npm i```
 2. open gitBash program (or terminal if you are a Mac user)
 run one of the pattens using canvas-sketch
