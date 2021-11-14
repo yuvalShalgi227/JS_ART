@@ -6,8 +6,8 @@ class Particle {
         this.mas = mas;
     }
     update() {
-        this.vel = this.vel.add(this.acc);
-        this.pos = this.pos.add(this.vel);
+        this.vel.add(this.acc);
+        this.pos.add(this.vel);
         this.acc.set(0);
 
     }

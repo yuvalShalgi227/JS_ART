@@ -6,8 +6,6 @@ function setup() {
 }
 
 function updateP(part, g) {
-
-   
     part.applayForce(g);
     if (mouseIsPressed){
         let wind = createVector(0.2,0);
