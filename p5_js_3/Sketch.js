@@ -8,7 +8,9 @@ function setup() {
 
 function draw() {
     background(51);
-    a.applyAttract(p);
+    let force = a.applyAttract(p);
+    p.applayForce(force)
     p.update();
     p.display();
+    a.display()
 }
