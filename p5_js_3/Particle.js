@@ -1,9 +1,9 @@
 class Particle {
-    constructor() {
-        this.pos = createVector(400, 50);
+    constructor(x,y,m) {
+        this.pos = createVector(x, y);
         this.vel = createVector(1,0);
         this.acc = createVector(0,0);
-        this.mas = 1;
+        this.mas = m;
     }
     update() {
         this.vel.add(this.acc);
