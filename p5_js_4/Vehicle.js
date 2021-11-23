@@ -3,7 +3,8 @@ class Vehicle {
         this.pos = createVector(x, y);
         this.vel = createVector(1,0);
         this.acc = createVector(0,0);
-        this.maxSpeed= 5;
+        this.maxSpeed= 100;
+        this.maxForce = 0.02;
         this.mas =1;
     }
     update() {
@@ -21,7 +22,7 @@ class Vehicle {
         let desired = p5.Vector.sub(target,this.pos);
         desired.limit(this.maxSpeed);
         let streaning = p5.Vector.sub(desired,this.vel);
-        streaning.limit(this.maxSpeed)
+        streaning.limit(this.maxForce)
         this.applayForce(streaning);
 
 
